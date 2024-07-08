@@ -22,7 +22,6 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "scd30.h"
-#include <stdio.h>
 #include <string.h>
 #include "sensirion_common.h"
 #include "sensirion_i2c.h"

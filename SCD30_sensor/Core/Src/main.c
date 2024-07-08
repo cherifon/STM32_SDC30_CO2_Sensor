@@ -21,12 +21,15 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-#include "scd30.h"
 #include <string.h>
+
+/*It still works if we take off this part, but it is recommended to keep it---*/
+#include "scd30.h"
 #include "sensirion_common.h"
 #include "sensirion_i2c.h"
 #include "sensirion_arch_config.h"
 #include "scd_git_version.h"
+/*It still works if we take off this part, but it is recommended to keep it---*/
 
 /* USER CODE END Includes */
 

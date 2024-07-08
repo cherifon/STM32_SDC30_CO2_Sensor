@@ -194,8 +194,10 @@ int main(void)
     	  rep[2] = *&relative_humidity;
 
     	  sprintf(buffer, "\n\rCO2 : %0.1f ppm \t Temperature : %0.1f C \t Humidity : %0.1f%% \r\n", rep[0], rep[1], rep[2]);
-    	  HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_5);
+    	  HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_5); //Toggles the LD2 every time a line of data is sent to the UART interface
+    	  HAL_Delay(100); //Delays the LD2 every
     	  HAL_UART_Transmit(&huart2, buffer, sizeof(buffer), 10);
+    	  HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_5); //Re-toggles the LD2 every time a line of data is sent to the UART interface
       }
   }
 

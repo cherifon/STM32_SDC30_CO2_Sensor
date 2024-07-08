@@ -157,7 +157,7 @@ int main(void)
     /* USER CODE BEGIN 3 */
       uint16_t data_ready = 0;
       uint16_t timeout = 0;
-      char buffer[53];
+      char buffer[60];
 
       /* Poll data_ready flag until data is available. Allow 20% more than
        * the measurement interval to account for clock imprecision of the
@@ -193,7 +193,7 @@ int main(void)
     	  rep[1] = *&temperature;
     	  rep[2] = *&relative_humidity;
 
-    	  sprintf(buffer, "\n\rCO2 : %0.1f \t Temperature : %0.1f \t Humidity : %0.1f \r\n\n", rep[0], rep[1], rep[2]);
+    	  sprintf(buffer, "\n\rCO2 : %0.1f \t Temperature : %0.1f \t Humidity : %0.1f%% \r\n\n", rep[0], rep[1], rep[2]);
     	  HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_5);
     	  HAL_UART_Transmit(&huart2, buffer, sizeof(buffer), 10);
       }

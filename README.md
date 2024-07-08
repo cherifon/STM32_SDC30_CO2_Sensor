@@ -41,28 +41,28 @@ To build and run the project, ensure the following dependencies are met:
 #### Step 1: Adding I2C Peripheral
 
 1. Click on the "Pinout & Configuration" tab.
-2. Navigate to the "Peripherals" section.
-3. Click on "+ I2C1" under "Peripherals" to add the I2C peripheral.
+2. Navigate to the "Connectivity" section.
+3. Click on "I2C1" to add the I2C peripheral.
 
 #### Step 2: Configuring I2C Parameters
 
 1. Click on the newly added I2C1 peripheral to configure its parameters.
-2. Set the I2C Mode, Clock Speed, and other relevant parameters as per your sensor's requirements.
+2. Set the I2C Mode to "I2C".
 
-![I2C Configuration](screenshots/i2c_setup.png)
+![I2C Configuration](screenshots/I2C_Setup.png)
 
 ### Configuring UART Interface
 
 #### Step 3: Adding UART Peripheral
 
-1. Click on "+ USART1" under "Peripherals" to add the UART peripheral.
+1. Click on "USART2" under "Connectivity" to add the UART peripheral.
 
 #### Step 4: Configuring UART Parameters
 
-1. Click on the newly added USART1 peripheral to configure its parameters.
-2. Set the UART Mode, Baud Rate, and other relevant parameters.
+1. Click on the newly added "USART2" peripheral to configure its parameters.
+2. Set the UART Mode to "Asynchronous".
 
-![UART Configuration](screenshots/uart_setup.png)
+![UART Configuration](screenshots/UART_Setup.png)
 
 ### Configuring GPIO (LED2) Pin
 
@@ -72,15 +72,17 @@ To build and run the project, ensure the following dependencies are met:
 
 #### Step 6: Configuring GPIO Parameters
 
-1. Set the GPIO Pin Mode, Output Type, and other relevant parameters for LED2.
+1. Set the GPIO Pin Mode to "Output".
 
-![GPIO Configuration](screenshots/gpio_setup.png)
+![GPIO Configuration](screenshots/GPIO_Pin_Setup.png)
 
 ### Generating Code
 
 1. After configuring I2C, UART, and GPIO settings, click on the "Project", then "Settings" tab.
 2. Set the toolchain/IDE to be used (e.g., STM32CubeIDE).
-3. Click "Save" and then "Project > Generate Code" to generate the code for your STM32L4 project.
+3. Click "Generate Code" to generate the code for your STM32L4 project.
+
+![Generate Code](screenshots/Generate_code.png)
 
 ### Importing Generated Code into Your IDE
 
@@ -106,8 +108,11 @@ To build and run the project, ensure the following dependencies are met:
 
 2. **Terminal Setup:**
    - Open Tera Term or a compatible terminal application on your computer.
+  
+   ![TeraTerm Setup](screenshots/TeraTerm_Setup.png)
+   Make sure that the speed is at 115200 Bits/s and the data is at 8 bit.
 
-3. **Monitor Sensor Data:**
+4. **Monitor Sensor Data:**
    - Configure Tera Term to receive UART data from the STM32L4 microcontroller.
    - Power on the setup and observe CO2 concentration, humidity, and temperature readings in real-time.
   
@@ -123,11 +128,15 @@ After setting up and running the code on the STM32L4 microcontroller, you should
    - Open Tera Term or any other terminal emulator.
    - Connect to the corresponding UART port.
    - You should see the CO2, temperature, and humidity readings displayed on the terminal in real-time.
+  
+   ![Terminal](screenshots/Running_code.png)
 
 3. **LED2 Status:**
    - The LED2 connected to the GPIO pin (e.g., PA5) can be used to indicate various statuses, such as data transmission or sensor activity.
 
-   ![Terminal Output Example](screenshots/terminal_output.png)
+## Resources
+
+For more information about the SCD30 sensor, refer to the [Sensirion SCD30 Product Page](https://sensirion.com/products/catalog/SCD30/).
 
 ## Contributing
 

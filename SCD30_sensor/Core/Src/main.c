@@ -21,7 +21,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-#include <string.h>
+#include <stdio.h>
 
 /*It still works if we take off this part, but it is recommended to keep it---*/
 #include "scd30.h"

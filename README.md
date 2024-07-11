@@ -6,11 +6,12 @@ This repository contains a C code implementation for interfacing the Sensirion S
 
 - [Overview](#overview)
 - [Dependencies](#dependencies)
-- [STM32CubeMX](#STM32CubeMX)
+- [STM32CubeMX](#stm32cubemx)
 - [Setup](#setup)
 - [Usage](#usage)
 - [Results](#results)
 - [Contributing](#contributing)
+- [License](#license)
 - [Contact](#contact)
 
 ## Overview
@@ -141,6 +142,10 @@ For more information about the SCD30 sensor, refer to the [Sensirion SCD30 Produ
 ## Contributing
 
 Contributions are welcome! Fork the repository, make your changes in [main.c](https://github.com/cherifon/STM32_SDC30_CO2_Sensor/blob/main/SCD30_sensor/Core/Src/main.c), and submit a pull request. Please adhere to code style guidelines and ensure compatibility with the STM32L4 platform.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Contact
 

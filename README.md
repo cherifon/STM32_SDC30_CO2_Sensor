@@ -24,7 +24,7 @@ To build and run the project, ensure the following dependencies are met:
 - STM32CubeIDE or STM32CubeMX for STM32L4 firmware development
 - Tera Term or other UART terminal software for receiving sensor data
 
-##STM32CubeMX
+## STM32CubeMX
 
 #### Download and Install STM32CubeMX
 

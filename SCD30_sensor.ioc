@@ -1,5 +1,5 @@
 #MicroXplorer Configuration settings - do not modify
-CAD.formats=
+CAD.formats=https://github.com/cherifon/STM32_SDC30_CO2_Sensor/tree/main/SCD30_sensor
 CAD.pinconfig=
 CAD.provider=
 File.Version=6
